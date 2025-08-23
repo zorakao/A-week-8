@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  </head>
+
+  <body>
+    <%- include('./layout/header'); -%>
+ 
+    <main>
+      <section class="banner banner-lg">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <h2 class="fs-5 fw-bold text-primary bg-primary-10 rounded-4 p-2 d-inline-block mb-4">ZOBAA 旅行推薦平台</h2>
+              <h1 class="text-primary fs-2 fw-bold mb-2 mb-lg-7">
+                <span class="d-block d-lg-inline">用旅行，</span><span>收藏世界的樣子</span>
+              </h1>
+              <p class="h6 text-primary-80 fw-bold mb-7 mb-lg-10">ZOBAA 整合熱門景點推薦、即時優惠、獨家行程，從比價到訂購，一次完成你的完美出遊計畫。</p>
+              <form class="position-relative d-none d-lg-block">
+                <span class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60">
+                    search
+                </span>
+                <input type="search" class="form-control rounded-4 py-6 ps-10 navbar-lg-search" id="navbar-lg-search" placeholder="搜尋景點、地點或城市">
+                <button type="button" class="btn text-white fs-bold rounded-4 bg-primary py-4 px-5 position-absolute top-50 end-50 translate-middle-y">開始探索旅程</button>
+              </form>
+    
+              <form class="position-relative w-100 d-lg-none">
+                <span class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60">
+                    search
+                </span>
+                <input type="search" class="form-control rounded-4 py-6 ps-10" id="exampleFormControlInput1" placeholder="搜尋景點、地點或城市">          
+                <button type="button" class="btn text-white fs-bold rounded-4 bg-primary py-4 px-5 position-absolute top-50 end-0 translate-middle-y">開始探索旅程</button>
+             </form>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="recommend py-10">
+        <div class="container text-white d-lg-flex justify-content-lg-between align-items-lg-center mb-10">
+          <h3 class="mb-7">你的<br/>專屬推薦</h3>
+          <div>
+            <p class="mb-4">來看我們的精選推薦行程，滿意度高達 99.2%<br>給自己一個難忘的旅遊行程吧！</p>
+            <a href="#" class="text-white">查看全部行程<span class="material-icons-outlined align-bottom ms-2">
+              arrow_forward
+              </span></a>
+          </div>
+        </div>
+        <div class="container d-flex gap-5 overflow-x-auto">
+          <div class="card text-bg-dark rounded-5 overflow-hidden flex-shrink-0 flex-lg-shrink-1">
+            <img src="/assets/images/index/recommend.png" class="card-img h-100" alt="...">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <h4 class="mb-2">峇里島渡假漫遊</h4>
+              <p class="mb-6">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
+              <button type="button" class="btn btn-light p-6 rounded-pill d-flex justify-content-between">訂購行程<span class="material-icons-outlined align-bottom">
+                arrow_forward
+                </span></button>
+            </div>
+          </div>
+          <div class="card text-bg-dark rounded-5 overflow-hidden flex-shrink-0 flex-lg-shrink-1">
+            <img src="/assets/images/index/recommend-1.png" class="card-img h-100" alt="...">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <h4 class="mb-2">日本深度賞櫻計畫</h4>
+              <p class="mb-6">春季限定，東京、京都、大阪賞櫻之旅，體驗日本文化的精髓。</p>
+              <button type="button" class="btn btn-light p-6 rounded-pill d-flex justify-content-between">訂購行程<span class="material-icons-outlined align-bottom">
+                arrow_forward
+                </span></button>
+            </div>
+          </div>
+          <div class="card text-bg-dark rounded-5 overflow-hidden flex-shrink-0 flex-lg-shrink-1">
+            <img src="/assets/images/index/recommend-2.png" class="card-img h-100" alt="...">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <h4 class="mb-2">紐西蘭雪山探險</h4>
+              <p class="mb-6">探索南島壯麗的自然風光，體驗各種極限運動和戶外活動。</p>
+              <button type="button" class="btn btn-light p-6 rounded-pill d-flex justify-content-between">訂購行程<span class="material-icons-outlined align-bottom">
+                arrow_forward
+                </span></button>
+            </div>
+          </div>
+          <div class="card text-bg-dark rounded-5 overflow-hidden flex-shrink-0 flex-lg-shrink-1">
+            <img src="/assets/images/index/recommend-3.png" class="card-img h-100" alt="...">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <h4 class="mb-2">摩洛哥迷幻之旅</h4>
+              <p class="mb-6">漫步沙漠與古城之間，探索千年文化與色彩繽紛的市集風情。</p>
+              <button type="button" class="btn btn-light p-6 rounded-pill d-flex justify-content-between">訂購行程<span class="material-icons-outlined align-bottom">
+                arrow_forward
+                </span></button>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="bg-deco-1">
+        <div class="container py-10  py-lg-12">
+          <div class="row flex-lg-row-reverse justify-content-between align-items-lg-center">
+            <div class="col-12 col-lg-4 mb-10 d-flex justify-content-lg-end">
+              <div>
+                <h3 class="text-primary mb-7">ZOBAA!<br/>
+                  踏上旅程的<br/>
+                  第一站</h3>
+                <p class="text-primary-60">探索最熱門的旅遊主題，<br/>
+                  從旅人必備攻略到獨家優惠，<br/>
+                  全都為你精挑細選。</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="card rounded-4 mb-5">
+                    <img src="/assets/images/index/intro-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4>ZOBAA 專屬推薦行程</h4>
+                      <p>嚴選深度行程，豐富旅行靈感</p>
+                    </div>
+                  </div>
+                </div>  
+                <div class="col-12 col-lg-6">
+                  <div class="card rounded-4 mb-5">
+                    <img src="/assets/images/index/intro-2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4>旅人攻略集合</h4>
+                      <p>景點、交通、私房景點一次掌握</p>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+              <div class="row offset-row">
+                <div class="col-12 col-lg-6">
+                  <div class="card rounded-4 mb-5">
+                    <img src="/assets/images/index/intro-3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4>優惠機票、酒店</h4>
+                      <p>即時比價，聰明出發不踩雷</p>
+                    </div>
+                  </div>
+                </div>              
+                <div class="col-12 col-lg-6">
+                  <div class="card rounded-4 mb-10">
+                    <img src="/assets/images/index/intro-4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4>銀行專屬優惠</h4>
+                      <p>使用指定卡別享受獨家旅遊好康</p>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-primary-10 py-10 py-lg-12 mb-10 mb-lg-12">
+        <div class="container">
+            <h2 class="text-primary fw-bold mb-7">今年旅行的<br/>靈感地圖</h2>
+          <div class="d-lg-flex justify-content-between">
+            <div class="d-flex mb-5 mb-lg-11">
+              <button type="button" class="btn btn-primary text-white fw-bold py-2 px-5 me-2">全部</button>
+              <button type="button" class="btn bg-white text-primary fw-bold py-2 px-5 me-2">亞洲</button>
+              <button type="button" class="btn bg-white text-primary fw-bold py-2 px-5 me-2">歐洲</button>
+              <button type="button" class="btn bg-white text-primary fw-bold py-2 px-5 me-2">美洲</button>
+              <button type="button" class="btn bg-white text-primary fw-bold py-2 px-5 me-2">大洋洲</button>
+              <button type="button" class="btn bg-white text-primary fw-bold py-2 px-5 me-2">非洲</button>
+            </div>
+            <div class="text-center">
+              <p class="h6 h4-lg text-primary fw-bold mb-lg-7 mb-10">來自旅人搜尋、收藏與討論最多的目的地排行榜，<br/>一場風格與故事感兼具的靈感旅行，就從這裡開始。
+              </p>
+              <div class="d-flex justify-content-end">
+                <button type="button" class="btn bg-white align-bottom d-none d-lg-block"><span class="material-icons-outlined">
+                  arrow_back
+                  </span></button>
+                <button type="button" class="btn bg-white align-bottom ms-2 d-none d-lg-block"><span class="material-icons-outlined">
+                  arrow_forward
+                  </span></button>  
+              </div>
+            </div>
+          </div>
+
+          <div class="container mb-10 mb-lg-12 overflow-x-auto">
+            <div class="row">
+              <div class="col-12 d-flex justify-content-start gap-5">
+                <div class="card bg-white map-card rounded-5 mb-2 flex-shrink-0">
+                  <div class="card-body">
+                    <img src="/assets/images/index/map-1.png" class="card-img-top map-img rounded-5 mb-2" alt="...">
+                    <div class="d-flex flex- column mb-2">
+                      <p class="bg-primary-10 text-primary fw-bold rounded-3 d-inline py-2 px-5 me-2">亞洲<p>
+                      <p class="bg-primary-10 text-primary fw-bold rounded-3 d-inline py-2 px-5">日本京都</p>
+                    </div>  
+                    <h2 class="card-title mb-2">走進四季交織的文化時光</h2>
+                    <p class="card-text text-netural-80 mb-7">穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。</p>
+                    <p class="bg-primary-10 text-primary fw-bold rounded-3 d-inline py-2 px-5 me-2">ZOBAA 建議<p>
+                    <p class="text-primary mb-7">賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁</p>
+                    <button type="button" class="btn btn-dark p-6 rounded-pill d-flex justify-content-between mb-5 w-100">立即探索魅力古都<span class="material-icons-outlined ms-2">
+                      arrow_circle_right
+                      </span></button>
+                  </div>
+                </div>
+    
+                <div class="card bg-white map-card rounded-5 mb-2 flex-shrink-0">
+                <div class="card-body">
+                  <img src="/assets/images/index/map-2.png" class="card-img-top map-img rounded-5 mb-2" alt="...">
+                  <div class="d-flex flex- column mb-2">
+                    <p class="bg-primary-10 text-primary fw-bold rounded-3 d-inline py-2 px-5 me-2">亞洲<p>
+                    <p class="bg-primary-10 text-primary fw-bold rounded-3 d-inline py-2 px-5">南韓首爾</p>
+                  </div>  
+                  <h2 class="card-title mb-2">從街邊美食到韓劇場景</h2>
+                  <p class="card-text text-netural-80 mb-7">白天在弘大小巷探店，夜晚登上南山塔俯瞰整座城市的閃爍。</p>
+                  <p class="bg-primary-10 text-primary fw-bold rounded-3 d-inline py-2 px-5 me-2">ZOBAA 建議<p>
+                  <p class="text-primary mb-7">弘大周邊週五傍晚最熱鬧，小吃與街頭藝人齊發✨</p>
+                  <button type="button" class="btn btn-dark p-6 rounded-pill d-flex justify-content-between mb-5 w-100">感受韓系風格日常<span class="material-icons-outlined ms-2">
+                    arrow_circle_right
+                    </span></button>
+                </div>
+                </div>          
+              
+                <div class="card bg-white map-card rounded-5 mb-2 flex-shrink-0">
+                <div class="card-body">
+                  <img src="/assets/images/index/map-3.png" class="card-img-top map-img rounded-5 mb-2" alt="...">
+                  <div class="d-flex flex- column mb-2">
+                    <p class="bg-primary-10 text-primary fw-bold rounded-3 d-inline py-2 px-5 me-2">歐洲<p>
+                    <p class="bg-primary-10 text-primary fw-bold rounded-3 d-inline py-2 px-5">法國巴黎</p>
+                  </div>  
+                  <h2 class="card-title mb-2">在藝術與咖啡香中迷路</h2>
+                  <p class="card-text text-netural-80 mb-7">穿梭左岸書店與畫廊，任由麵包香與建築細節擁抱你的步伐。</p>
+                  <p class="bg-primary-10 text-primary fw-bold rounded-3 d-inline py-2 px-5 me-2">ZOBAA 建議<p>
+                  <p class="text-primary mb-7">走進瑪黑區，最容易與巴黎風格不期而遇 ☕️</p>
+                  <button type="button" class="btn btn-dark p-6 rounded-pill d-flex justify-content-between mb-5 w-100">立即探索魅力古都<span class="material-icons-outlined ms-2">
+                    arrow_circle_right
+                    </span></button>
+                </div>
+                </div>
+    
+                <div class="card bg-white map-card rounded-5 mb-2 flex-shrink-0">
+                  <div class="card-body">
+                    <img src="/assets/images/index/map-4.png" class="card-img-top map-img rounded-5 mb-2" alt="...">
+                    <div class="d-flex flex- column mb-2">
+                      <p class="bg-primary-10 text-primary fw-bold rounded-3 d-inline py-2 px-5 me-2">大西洲<p>
+                      <p class="bg-primary-10 text-primary fw-bold rounded-3 d-inline py-2 px-5">澳洲雪梨</p>
+                    </div>  
+                    <h2 class="card-title mb-2">城市與大自然的交會</h2>
+                    <p class="card-text text-netural-80 mb-7">清晨在海灘做瑜珈，午後漫步歌劇院，享受城市的節奏與野性的呼喚。</p>
+                    <p class="bg-primary-10 text-primary fw-bold rounded-3 d-inline py-2 px-5 me-2">ZOBAA 建議<p>
+                    <p class="text-primary mb-7">別錯過傍晚在雪梨港看日落＋欣賞歌劇院夜燈 ✨</p>
+                    <button type="button" class="btn btn-dark p-6 rounded-pill d-flex justify-content-between mb-5 w-100">立即探索魅力古都<span class="material-icons-outlined ms-2">
+                      arrow_circle_right
+                      </span></button>
+                  </div>
+                </div>          
+                
+                <div class="card bg-white map-card rounded-5 mb-2 flex-shrink-0">
+                  <div class="card-body">
+                    <img src="/assets/images/index/map-5.png" class="card-img-top map-img rounded-5 mb-2" alt="...">
+                    <div class="d-flex flex- column mb-2">
+                      <p class="bg-primary-10 text-primary fw-bold rounded-3 d-inline py-2 px-5 me-2">非洲<p>
+                      <p class="bg-primary-10 text-primary fw-bold rounded-3 d-inline py-2 px-5">埃及開羅</p>
+                    </div>  
+                    <h2 class="card-title mb-2">穿越千年時光的沙漠冒險</h2>
+                    <p class="card-text text-netural-80 mb-7">乘著駱駝走過古老遺跡，抬頭仰望太陽神的光芒，在歷史與傳說之間迷失。</p>
+                    <p class="bg-primary-10 text-primary fw-bold rounded-3 d-inline py-2 px-5 me-2">ZOBAA 建議<p>
+                    <p class="text-primary mb-7">建議早上 8 點前到吉薩金字塔，避開人潮與烈日 ☀️</p>
+                    <button type="button" class="btn btn-dark p-6 rounded-pill d-flex justify-content-between mb-5 w-100">立即探索魅力古都<span class="material-icons-outlined ms-2">
+                      arrow_circle_right
+                      </span></button>
+                  </div>
+                </div>            
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container overflow-x-auto mb-10">
+          <h2 class="text-primary fw-bold">搜尋墨爾本嗎？<br/>來點行程參考！</h2>
+          <div class="row">
+            <div class="col-12 d-flex gap-5">
+              <div class="card bg-white map-card rounded-5 mb-2 border-0 flex-shrink-0 h-100">
+                <div class="card-body">
+                  <img src="/assets/images/index/journey-1.png" class="card-img-top map-img rounded-5 mb-2" alt="...">
+                  <p class="card-text text-black fw-bold mb-7">【獨家優惠】布萊頓彩色小屋＋森林蒸汽火車一日遊</p>
+                  <div class="d-flex flex- column mb-2">
+                    <p class="bg-primary-10 text-primary rounded-3 d-inline py-2 px-5 me-2">即買即用<p>
+                    <p class="bg-primary-10 text-primary rounded-3 d-inline py-2 px-5">5 天前可免費取消</p>
+                  </div>
+                  <p class="me-2 pb-5 align-items-center border-bottom"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#F6BD2B"><path d="m273-185.54 55.31-231.77-183.46-155.92 240.61-20.92L480-812.84l94.54 219.69 240.61 19.92-183.46 155.92L687-185.54 480-308.46 273-185.54Z"/></svg>4.2 <span class="me-4">(333)</span><span>500+ 個已訂購</span></p>
+                  <div>
+                    <p class="text-primary fw-bold mb-0">NT$ 4,220</p>
+                    <del class="h6 text-neutral-60">NT$ 5,220</del>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-white map-card rounded-5 mb-2 border-0 flex-shrink-0 h-100">
+                <div class="card-body">
+                  <img src="/assets/images/index/journey-2.png" class="card-img-top map-img rounded-5 mb-2" alt="...">
+                  <p class="card-text text-black fw-bold mb-7">無尾熊動物園＋企鵝歸巢雙享之旅</p>
+                  <div class="d-flex flex- column mb-2">
+                    <p class="bg-primary-10 text-primary rounded-3 d-inline py-2 px-5 me-2">即買即用<p>
+                    <p class="bg-primary-10 text-primary rounded-3 d-inline py-2 px-5">7 天前可免費取消</p>
+                  </div>
+                  <p class="me-2 pb-5 align-items-center border-bottom"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#F6BD2B"><path d="m273-185.54 55.31-231.77-183.46-155.92 240.61-20.92L480-812.84l94.54 219.69 240.61 19.92-183.46 155.92L687-185.54 480-308.46 273-185.54Z"/></svg>4.2 <span class="me-4">(333)</span><span>500+ 個已訂購</span></p>
+                  <div>
+                    <p class="text-primary fw-bold mb-0">NT$ 3,890</p>
+                    <del class="h6 text-neutral-60">NT$ 4,920</del>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-white map-card rounded-5 mb-2 border-0 flex-shrink-0 h-100">
+                <div class="card-body">
+                  <img src="/assets/images/index/journey-3.png" class="card-img-top map-img rounded-5 mb-2" alt="...">
+                  <p class="card-text text-black fw-bold mb-7">大洋路經典一日遊｜中文導覽！體驗澳洲最夢幻的海岸線</p>
+                  <div class="d-flex flex- column mb-2">
+                    <p class="bg-primary-10 text-primary rounded-3 d-inline py-2 px-5 me-2">中文導覽<p>
+                    <p class="bg-primary-10 text-primary rounded-3 d-inline py-2 px-5">5 天前可免費取消</p>
+                  </div>
+                  <p class="me-2 pb-5 align-items-center border-bottom"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#F6BD2B"><path d="m273-185.54 55.31-231.77-183.46-155.92 240.61-20.92L480-812.84l94.54 219.69 240.61 19.92-183.46 155.92L687-185.54 480-308.46 273-185.54Z"/></svg>4.2 <span class="me-4">(333)</span><span>500+ 個已訂購</span></p>
+                  <div>
+                    <p class="text-primary fw-bold mb-0">NT$ 3,690</p>
+                    <del class="h6 text-neutral-60">NT$ 4,500</del>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-white map-card rounded-5 mb-2 border-0 flex-shrink-0 h-100">
+                <div class="card-body">
+                  <img src="/assets/images/index/journey-1.png" class="card-img-top map-img rounded-5 mb-2" alt="...">
+                  <p class="card-text text-black fw-bold mb-7">墨爾本市區導覽｜壁畫巷＋隱藏咖啡廳之旅，體驗本地咖啡文化、隱藏小巷拍照</p>
+                  <div class="d-flex flex- column mb-2">
+                    <p class="bg-primary-10 text-primary rounded-3 d-inline py-2 px-5 me-2">專業導覽<p>
+                    <p class="bg-primary-10 text-primary rounded-3 d-inline py-2 px-5">3 天前可免費取消</p>
+                  </div>
+                  <p class="me-2 pb-5 align-items-center border-bottom"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#F6BD2B"><path d="m273-185.54 55.31-231.77-183.46-155.92 240.61-20.92L480-812.84l94.54 219.69 240.61 19.92-183.46 155.92L687-185.54 480-308.46 273-185.54Z"/></svg>4.2 <span class="me-4">(333)</span><span>500+ 個已訂購</span></p>
+                  <div>
+                    <p class="text-primary fw-bold mb-0">NT$ 1,280</p>
+                    <del class="h6 text-neutral-60">NT$ 2,480</del>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-start">
+            <img src="/assets/images/index/bg-title-1.svg" alt="tilte-1" style="height: 32px;">          
+            <img src="/assets/images/index/bg-title-2.svg" alt="title-2" style="height: 32px;">          
+            <img src="/assets/images/index/bg-title-3.svg" alt="title-3" style="height: 32px;">
+            <img src="/assets/images/index/bg-title-1.svg" alt="tilte-1" style="height: 32px;">          
+            <img src="/assets/images/index/bg-title-2.svg" alt="title-2" style="height: 32px;">          
+            <img src="/assets/images/index/bg-title-3.svg" alt="title-3" style="height: 32px;">            
+          </div>
+        </div>  
+      </section>
+
+
+      <section>
+        <div class="bg-primary-40">
+          <div class="container py-10 py-lg-12">
+            <img src="/assets/images/index/card.png" alt="life" class="w-100 mb-2">
+            <div class="d-lg-flex">
+              <div class="container-lg p-7 bg-primary-10 rounded-4 mb-7 d-lg-flex">
+                <div class="me-auto">
+                  <h4 class="fs-7 text-primary fw-bold mb-5">為什麼選擇 ZOBAA ?</h4>
+                  <p>不只是帶你抵達目的地，更在每一次出發前，替你預想所有細節。<br/>ZOBΛA 希望你能放心探索世界，把記憶留給旅程本身。</p>
+                  <button type="button" class="btn btn-dark p-6 rounded-pill d-flex justify-content-between mb-5 w-100 d-none d-lg-block">立即探索我們的精心旅程<span class="material-icons-outlined ms-2">
+                    arrow_circle_right
+                    </span></button>
+                </div>
+                  <div class="bg-white rounded-4 d-lg-block d-none me-5" style="width: 250px; height: 234px;">
+                    <p class="h2 text-primary fw-bold pt-7 ps-7 mb-2">8 年+</p>
+                    <p class="text-primary-80 fs-bold ps-7 pb-7">旅遊企劃經驗</p>
+                  </div>
+                  <div class="bg-white rounded-4 mb-7 d-lg-block d-none" style="width: 250px; height: 234px;">
+                    <p class="h2 text-primary fw-bold pt-7 ps-7 mb-2">30,000+</p>
+                    <p class="text-primary-80 fs-bold ps-7 pb-7">旅人五星好評</p>
+                  </div>
+              </div>
+
+              <div class="bg-white rounded-4 d-lg-none">
+                <p class="h2 text-primary fw-bold pt-7 ps-7 mb-2">8 年+</p>
+                <p class="text-primary-80 fs-bold ps-7 pb-7">旅遊企劃經驗</p>
+              </div>
+              <div class="bg-white rounded-4 mb-7 d-lg-none">
+                <p class="h2 text-primary fw-bold pt-7 ps-7 mb-2">30,000+</p>
+                <p class="text-primary-80 fs-bold ps-7 pb-7">旅人五星好評</p>
+              </div>
+              <button type="button" class="btn btn-dark p-6 rounded-pill d-flex justify-content-between mb-5 w-100 d-lg-none">立即探索我們的精心旅程<span class="material-icons-outlined ms-2">
+                arrow_circle_right
+                </span></button>
+            </div>
+          </div>  
+        </div>
+      </section>
+
+    </main>
+     
+
+
+
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

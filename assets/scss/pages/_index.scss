@@ -43,10 +43,20 @@
 .map-card{
     width: 312px;
   }
+  @media (min-width: 992px){
+    .map-lg-card{
+      width: 746px;
+    }
+  }
 
 .map-img{
   width: 280px;
   height: 200px;
+}
+@media (min-width: 992px){
+  .map-lg-img{
+    height: 100%;
+  }
 }
 
 .bg-deco-1{
